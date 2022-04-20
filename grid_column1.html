@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Grid Column 1</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Tutorials on html">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="author" content="me">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .grid-container {
+            display: grid;
+            grid-template-columns: 100px 200px auto 80px;
+            gap: 5px;
+            background-color: #5f9ccd;
+            padding: 5px;
+            margin: 5px;
+            }
+            .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            text-align: center;
+            font-size: 30px;
+            padding: 30px;
+            }
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            @media screen and (max-width: 600px){
+            body{
+                background-color: blue;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div> 
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+            <div class="item8">8</div>
+        </div>
+    </body>
+</html>
