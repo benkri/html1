@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<!--Kristin Benusa 4/29/22-->
+
+<html lang="en">
+    <head>
+        <title>Layout</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Intro to Web Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Me">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+1. I based my site's color scheme on the colors used in the Star Trek TV series, 
+    and primarily on the images I am using (the starship and the Starfleet patch), 
+    which resulted in a lot of light greys to contrast with white and pops of 
+    appropriate colors. I used the dark, starry image in the background to bring a 
+    nice, sharp contrast to the reversed out type and lightly-colored images.
+2. white: #ffffff; muted yellow/gold: #b5a566; light grey for <h1>: #e5e5e5;
+    light grey for <h2>, .foot2, & .foot4: #c8c8c8
+3. The lighter of the light greys will be used for the large heading <h1> element 
+    in the <article>; I labeled it as such because it is meant to be a heading for 
+    any article title that will show up underneath the <header> on the home page. 
+    The darker of the light grey colors will be a contrasting color from the white 
+    text on the page so that there isn't so much white text to look at, and will show 
+    up in the subheading <h2> underneath the main article title <h1>, as well as the 
+    bottom left and right corners of each page in the <footer> where there are links 
+    to different pages or a call-to-action to go back to the top of any page. The 
+    muted yellow/gold color will render in the logo text at the very top of each page 
+    in the header, which will also be a link to go to the home page. Every other 
+    section of the pages will have white text to contrast against the dark background 
+    image color and to not take away from any other section's text on each page as 
+    well as give better hierarchy to the page, which will mostly render in the menu 
+    sections of the header text, Starfleet slogan in the bottom center of the footer, 
+    and body <p> text (when there is <p> text, since I will not assign any other color 
+    to overwrite the <body> color style).
+-->
+
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            @font-face {
+                font-family: HorizonBT;
+                src: url(fonts/HorizonBT.ttf);
+            }
+            /*Aside from the font face above, I don't plan on using any special, pre-loaded 
+            font aside from Arial or other default sans-serifs that will render in each browser 
+            because I think each font weight renders nicely for the style that the sans serif is 
+            in contrast to HorizonBT. This font will render in every spot that HorizonBT is not, 
+            which will be each of the heading and paragraph tags.*/
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                background-image: url('img/homebg.jpeg')
+            }
+            header{
+                text-align: center;
+            }
+            .header-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding: 20px;
+            }
+            /*Each header item will have the original Star Trek HorizonBT font with one larger size 
+            for the website's logo and a much smaller size for each menu header item.*/
+            .header-item{
+                font-family: HorizonBT;
+                font-size: 25px;
+            }
+            .item1{
+                grid-column: 1 / span 7;
+                grid-row: 1;
+                font-size: 85px;
+                padding-bottom: 30px;
+                color: #b5a566;
+            }
+            nav{
+                float: right;
+                width: 60%;
+                padding-right: 2%;
+                padding-top: 1%;
+            }
+            article{
+                float: left;
+                padding-left: 5%;
+                padding-top: 2%;
+                width: 40%;
+            }
+            h1{
+                font-weight: 100;
+                font-size: 50px;
+                color: #e5e5e5;
+            }
+            h2{
+                font-weight: 800;
+                font-size: 20px;
+                color: #c8c8c8;
+            }
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                text-align: center;
+            }
+            .footer-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 0px;
+                padding-top: 50px;
+            }
+            .foot1{
+                grid-column: 1 / span 3;
+                grid-row: 1;
+            }
+            .foot2{
+                text-align: left;
+                margin-top: 15px;
+                color: #c8c8c8;
+            }
+            .foot4{
+                text-align: right;
+                margin-top: 15px;
+                color: rgb(200, 200, 200);
+            }
+            /*This heading tag, which I'm using only for the website's slogan in the footer, 
+            will be the only other place on each page that will contain the HorizonBT font.*/
+            h3{
+                font-size: 25px;
+                font-family: HorizonBT;
+            }
+            /*Even though this heading is used in the footer, it didn't make hierarchical sense 
+            or bring good balance to draw attention to the bottom corners of the page, which are 
+            only meant to be simple quick links that are there but visually out of the way of the 
+            more important text elements on each page.*/
+            h4{
+                font-weight: lighter;
+            }
+            @media screen and (max-width: 960px){
+                .item1{
+                    grid-column: 1 / span 4;
+                    grid-row: 1;
+                    padding-bottom: 30px;
+                }
+                nav{
+                    width: auto;
+                    padding-right: 0%;
+                    padding-top: 1%;
+                }
+                article{
+                    text-align: center;
+                    padding-left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-item item1">STARFLEET</div>
+                <div class="header-item item2">Mission Statement</div>
+                <div class="header-item item3">Starfleet Vessels</div>  
+                <div class="header-item item4">Starfleet Officers</div>
+                <div class="header-item item5">Departments</div>
+                <div class="header-item item6">Starfleet Academy</div>  
+                <div class="header-item item7">Recruitment</div>
+                <div class="header-item item8">Contact Us</div>
+        </header>
+        <section>
+            <article>
+                <div>
+                    <div class="text1">
+                        <h1>U.S.S. Enterprise Set
+                        to Embark on a 5-Year
+                        Relations Mission</h1>
+                        <h2>Read Full Report Here</h2></div>
+                </div>
+            </article>
+            <nav>
+                <div>
+                    <div class="article-image"><img src="img/enterprise.png"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                </div>
+            </nav>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-item foot1">
+                    <div class="article-image"><img src="img/starfleetlogo.png"
+                        style="max-width: 7%; max-height: 7%;"></div></div>
+                <div class="footer-item foot2"><h4>Contact Us | Recruitment</h4></div>
+                <div class="footer-item foot3"><h3>To Boldly Go Where No Man Has Gone Before</h3></div>
+                <div class="footer-item foot4"><h4>Back to Top</h4></div>
+            </div>
+        </footer>
+    </body>
+</html>
