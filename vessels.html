@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<!--Kristin Benusa 5/10/22-->
+
+<html lang="en">
+    <head>
+        <title>Starfleet Vessels</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Intro to Web Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Me">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            @font-face {
+                font-family: HorizonBT;
+                src: url(fonts/HorizonBT.ttf);
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                background-image: url('img/homebgedit.png'), url('img/homebgrepeater.png');
+                background-repeat: no-repeat, repeat;
+            }
+            header{
+                text-align: center;
+            }
+            .header-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-top: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .header-item{
+                font-family: HorizonBT;
+                font-size: 25px;
+            }
+            a:link{
+                color: white;
+                text-decoration: none;
+            }
+            a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            a:active{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            .item1{
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                font-size: 85px;
+                padding-bottom: 30px;
+                color: #b5a566;
+            }
+            .article-heading{
+                text-align: center;
+                padding-top: 2%;
+            }
+            article{
+                float: left;
+                padding-left: 7%;
+                padding-right: 10%;
+                padding-top: 2%;
+                width: 50%;
+                text-align: left;
+            }
+            .text1{
+                padding-left: 15%;
+            }
+            .text2{
+                padding-left: 15%;
+                padding-top: 5%;
+            }
+            .text3{
+                padding-left: 15%;
+                padding-top: 5%;
+            }
+            .text4{
+                padding-left: 15%;
+                padding-top: 5%;
+            }
+            .text5{
+                padding-left: 15%;
+                padding-top: 5%;
+            }
+            h1{
+                font-weight: 100;
+                font-size: 50px;
+                color: #e5e5e5;
+            }
+            h2{
+                font-weight: 500;
+                font-size: 30px;
+                color: #c8c8c8;
+            }
+            nav{
+                float: right;
+                width: 50%;
+                padding-right: 7%;
+                padding-top: 2%;
+            }
+            .img1{
+                text-align: center;
+                padding-top: 2%;
+            }
+            .img2{
+                text-align: center;
+                padding-top: 6%;
+            }
+            .img3{
+                text-align: center;
+                padding-top: 10%;
+            }
+            .img4{
+                text-align: center;
+                padding-top: 35%;
+            }
+            .img5{
+                text-align: center;
+                padding-top: 37%;
+            }
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                text-align: center;
+            }
+            .footer-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 0px;
+                padding-top: 7%;
+            }
+            .foot1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .foot2{
+                text-align: center;
+                margin-top: 15px;
+            }
+            h3{
+                font-size: 25px;
+                font-family: HorizonBT;
+            }
+            @media screen and (max-width: 960px){
+                .item1{
+                    grid-column: 1 / span 2;
+                    grid-row: 1;
+                    padding-bottom: 30px;
+                }
+                nav{
+                    width: auto;
+                    padding-right: 0%;
+                    padding-top: 1%;
+                }
+                article{
+                    text-align: center;
+                    padding-left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-item item1">
+                    <a href="homepage.html">STARFLEET</a></div>
+                <div class="header-item item2">
+                    <a href="missionstatement.html">Mission Statement</a></div>
+                <div class="header-item item3">
+                    <a href="vessels.html">Starfleet Vessels</a></div>  
+                <div class="header-item item4">
+                    <a href="officers.html">Starfleet Officers</a></div>
+                <div class="header-item item5">
+                    <a href="departments.html">Departments</a></div>
+            </div>
+        </header>
+        <!--EDITABLE INFORMATION GOES HERE-->
+        <section>
+            <div class="article-heading">
+                <div>
+                    <h1>Starfleet Vessels</h1>
+                </div>
+            </div>
+            <article>
+                <div class="article-container">
+                    <div class="article-item text1">
+                        <h2>NX Class</h2>
+                        <p>
+                            The NX class was conceived in the early 22nd century as part of the NX 
+                            Project at the Warp Five Complex: a research and development site on 
+                            Earth, where Henry Archer, Zefram Cochrane, and Captain W.M. Jefferies, 
+                            among others, worked on the creation of the warp five engine. Following 
+                            the construction of the first starship of the class (Enterprise), three more 
+                            NX-class starships were on the drawing board by August 2151. 
+                        </p>
+                            <ul>
+                                <li>Type: Explorer</li>
+                                <li>Length: 225m</li>
+                                <li>Beam: 135.8m</li>
+                                <li>Height: 33.3m</li>
+                                <li>Mass: 80,000 metric tons</li>
+                                <li>Decks: 7</li>
+                                <li>Crew: 83</li>
+                                <li>Max. Speed: Warp 5.2</li>
+                                <li>Armaments: 3 phase cannons, fore and aft torpedo launchers, spatial torpedoes</li>
+                            </ul>
+                    </div>
+                    <div class="article-item text2">
+                        <h2>Constitution Class</h2>
+                        <p>
+                            The Constitution-class starships were the premier frontline Starfleet 
+                            vessels in the latter half of the 23rd century. They were designed for 
+                            long duration missions with minimal outside support and were best 
+                            known for their celebrated missions of galactic exploration and 
+                            diplomacy, and were capable of operating on five-year mission cycles.
+                            <br><br>
+                            The Constitution-class featured the saucer section-engineering section-warp nacelle layout common to most 
+                            Starfleet vessels. All ships of the class of the same level of refit appeared to be identical at first glance, but 
+                            closer inspection revealed minor detail differences on certain vessels.
+                        </p>
+                            <ul>
+                                <li>Type: Heavy Cruiser</li>
+                                <li>Length: 288.6m</li>
+                                <li>Beam: 127m</li>
+                                <li>Height: 72.6m</li>
+                                <li>Mass: 1,000,000 tons</li>
+                                <li>Decks: 22</li>
+                                <li>Crew: 430</li>
+                                <li>Max. Speed: Warp 8</li>
+                                <li>Armaments: Phaser banks, 6 fore photon torpedo launchers, 1 aft torpedo launcher</li>
+                            </ul>
+                    </div>
+                    <div class="article-item text3">
+                        <h2>Excelsior Class</h2>
+                        <p>
+                            The Excelsior class was one of the longest-serving starship 
+                            classes in Federation history. It was first launched during the 
+                            2280's and continued to serve as the backbone of Starfleet 
+                            well into the 2370's.
+                            <br><br>
+                            When introduced, the Excelsior class was used to carry out 
+                            Starfleet's "Great Experiment": testing a prototype transwarp drive. While the transwarp experiment ultimately 
+                            failed, the design of the ship proved to be reliable and efficient. After the second vessel of the Excelsior line was 
+                            christened as the USS Enterprise-B, this class would become one of the most widely recognised ship designs in 
+                            all of Starfleet, favoured among many members of the fleet's admiralty.
+                        </p>
+                            <ul>
+                                <li>Type: Cruiser/Explorer</li>
+                                <li>Length: 511m</li>
+                                <li>Beam: 95.6m</li>
+                                <li>Height: 86.7m</li>
+                                <li>Mass: 2,350,000 tons</li>
+                                <li>Decks: 34</li>
+                                <li>Crew: 750</li>
+                                <li>Max. Speed: Warp 9</li>
+                                <li>Armaments: Phaser banks, fore/aft torpedo launchers, photon/quantum torpedoes</li>
+                            </ul>
+                    </div>
+                    <div class="article-item text4">
+                        <h2>Ambassador Class</h2>
+                        <p>
+                            The Ambassador-class featured the saucer section-engineering section-
+                            warp nacelle layout common to most Starfleet vessels. It was 
+                            intermediate in size between the Excelsior-class and the Galaxy-class. In 
+                            addition, the class boasted at least three engineering levels.
+                            <br><br>
+                            A number of Ambassador-class ships were constructed with minor 
+                            alterations from the original design. The saucer section's connection to 
+                            the engineering hull was shifted slightly aft, with the nacelle pylon 
+                            assembly moved a corresponding distance in the same direction. Cowlings were added around the Bussard 
+                            collectors, making them appear closer to that of the Galaxy-class, while the impulse engine exhaust changed 
+                            from a blue to a red glow. The lower sensor dome became more elaborate and closer in appearance to the
+                            Excelsior-class and the deflector dish was modified. Finally, the width of the shuttlebay was increased and a 
+                            second facility resembling that on the Excelsior-class engineering hull was mounted directly underneath the 
+                            original one. Graphics were upgraded with the Starfleet insignia of the 2360s.
+                        </p>
+                            <ul>
+                                <li>Type: Emissary, Explorer</li>
+                                <li>Length: 524.2m</li>
+                                <li>Beam: 283m</li>
+                                <li>Height: 101.5m</li>
+                                <li>Mass: 3,710,000 tons</li>
+                                <li>Decks: 33</li>
+                                <li>Crew: 700</li>
+                                <li>Max. Speed: Warp 9.4</li>
+                                <li>Armaments: 10 phaser arrays, 2 torpedo launchers, photon torpedoes</li>
+                            </ul>
+                    </div>
+                    <div class="article-item text5">
+                        <h2>Galaxy Class</h2>
+                        <p>
+                            The Galaxy class was introduced in the 2350's and was one of the 
+                            largest and most advanced starship designs in Starfleet history. 
+                            These ships served a number of purposes including exploration, 
+                            defense, diplomatic missions and support and rescue operations.
+                            <br><br>
+                            The Galaxy class starships were also suited for accomodating 
+                            civilians long-term and housed a wide variety of facilities not often 
+                            found on other starships. These included a gymnasium, a racquetball court, a bar and restaurant, a concert hall, 
+                            educational facilities and sixteen holodecks.
+                            <br><br>
+                            This model of starship was designed with two distinct hull sections, the saucer section (primary) and the 
+                            stardrive section (secondary). In extreme scenarios, the saucer could separate from the stardrive section and 
+                            operate independently, though could only travel at impulse. In the event of a possible warp core breach, the 
+                            crew could evacuate to the saucer section which would then separate from the stardrive section before the 
+                            engine core exploded.
+                        </p>
+                            <ul>
+                                <li>Type: Explorer</li>
+                                <li>Length: 642.5m</li>
+                                <li>Beam: 463.7m</li>
+                                <li>Height: 195.2m</li>
+                                <li>Mass: 4,500,000 tons</li>
+                                <li>Decks: 42</li>
+                                <li>Crew: 1,012</li>
+                                <li>Max. Speed: Warp 9.4</li>
+                                <li>Armaments: 14 phaser arrays, 2 torpedo launchers, photon torpedoes, antimatter mines</li>
+                            </ul>
+                    </div>
+                </div>
+            </article>
+            <nav>
+                <div class="article-images">
+                    <div class="article-image img1"><img src="img/enterprise.png" alt="NX Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                    <div class="article-image img2"><img src="img/constitutionclass.png" alt="Constitution Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                    <div class="article-image img3"><img src="img/excelsiorclass.png" alt="Excelsior Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                    <div class="article-image img4"><img src="img/ambassadorclass.png" alt="Ambassador Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                    <div class="article-image img5"><img src="img/galaxyclass.png" alt="Galaxy Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
+                </div>
+            </nav>
+        </section>
+        <!--EDITABLE INFORMATION ENDS HERE-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-item foot1">
+                    <div class="article-image"><img src="img/starfleetlogo.png" alt="Starfleet Logo"
+                        style="max-width: 7%; max-height: 7%;"></div></div>
+                <div class="footer-item foot2"><h3>To Boldly Go Where No Man Has Gone Before</h3></div>
+            </div>
+        </footer>
+    </body>
+</html>

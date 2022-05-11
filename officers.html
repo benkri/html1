@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<!--Kristin Benusa 5/10/22-->
+
+<html lang="en">
+    <head>
+        <title>Starfleet Officers</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Intro to Web Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Me">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            @font-face {
+                font-family: HorizonBT;
+                src: url(fonts/HorizonBT.ttf);
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                background-image: url('img/homebgedit.png'), url('img/homebgrepeater.png');
+                background-repeat: no-repeat, repeat;
+            }
+            header{
+                text-align: center;
+            }
+            .header-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-top: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .header-item{
+                font-family: HorizonBT;
+                font-size: 25px;
+            }
+            a:link{
+                color: white;
+                text-decoration: none;
+            }
+            a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            a:active{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            .item1{
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                font-size: 85px;
+                padding-bottom: 30px;
+                color: #b5a566;
+            }
+            .article-heading{
+                text-align: center;
+                padding-top: 2%;
+            }
+            article{
+                padding-left: 20%;
+                padding-right: 20%;
+                width: auto;
+                text-align: left;
+            }
+            h1{
+                font-weight: 100;
+                font-size: 50px;
+                color: #e5e5e5;
+            }
+            h2{
+                font-weight: 500;
+                font-size: 40px;
+                color: #c8c8c8;
+            }
+            footer{
+                text-align: center;
+            }
+            .footer-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 0px;
+                padding-top: 7%;
+            }
+            .foot1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .foot2{
+                text-align: center;
+                margin-top: 15px;
+            }
+            h3{
+                font-size: 25px;
+                font-family: HorizonBT;
+            }
+            h4{
+                font-size: 40px;
+                font-weight: bold;
+                color: #c8c8c8;
+            }
+            h5{
+                font-size: 25px;
+                font-weight: lighter;
+                color: #c8c8c8;
+            }
+            @media screen and (max-width: 960px){
+                .item1{
+                    grid-column: 1 / span 2;
+                    grid-row: 1;
+                    padding-bottom: 30px;
+                }
+                nav{
+                    width: auto;
+                    padding-right: 0%;
+                    padding-top: 1%;
+                }
+                article{
+                    text-align: center;
+                    padding-left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-item item1">
+                    <a href="homepage.html">STARFLEET</a></div>
+                <div class="header-item item2">
+                    <a href="missionstatement.html">Mission Statement</a></div>
+                <div class="header-item item3">
+                    <a href="vessels.html">Starfleet Vessels</a></div>  
+                <div class="header-item item4">
+                    <a href="officers.html">Starfleet Officers</a></div>
+                <div class="header-item item5">
+                    <a href="departments.html">Departments</a></div>
+            </div>
+        </header>
+        <!--EDITABLE INFORMATION GOES HERE-->
+        <section>
+            <div class="article-heading">
+                <div>
+                    <h1>Starfleet Officers</h1>
+                </div>
+            </div>    
+            <article>
+                <div class="article-container">
+                    <div class="article-item text1">
+                        <h4>Flag Officers</h4>
+                    </div>
+                    <div class="article-item text2">
+                            <h5>Commander-in-Chief</h5>
+                            <p>
+                            The commanding officer of the entire Starfleet who holds 
+                            the actual rank of Fleet Admiral but is superior, authority-wise, 
+                            to other fleet admirals.
+                            </p>
+                            <br>
+                            <h5>Fleet Admiral</h5>
+                            <p>
+                            The most senior flag rank in Starfleet.
+                            </p>
+                            <br>
+                            <h5>Admiral</h5>
+                            <p>
+                            The second most senior flag rank known to exist in Starfleet.
+                            </p>
+                            <br>
+                            <h5>Vice Admiral</h5>
+                            <p>
+                            Starfleet flag rank immediately inferior to full admiral, but superior 
+                            to a rear admiral.
+                            </p>
+                            <br>
+                            <h5>Rear Admiral</h5>
+                            <p>
+                            The lowest grade of admiral in Starfleet. It is inferior to a vice admiral, 
+                            and superior to a commodore or captain.
+                            </p>
+                            <br>
+                            <h5>Commodore</h5>
+                            <p>
+                            Immediately superior to a captain, and just before rear admiral. 
+                            At some point in Starfleet history, this rank became known as 
+                            "rear admiral lower half."
+                            </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--EDITABLE INFORMATION ENDS HERE-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-item foot1">
+                    <div class="article-image"><img src="img/starfleetlogo.png" alt="Starfleet Logo"
+                        style="max-width: 7%; max-height: 7%;"></div></div>
+                <div class="footer-item foot2"><h3>To Boldly Go Where No Man Has Gone Before</h3></div>
+            </div>
+        </footer>
+    </body>
+</html>

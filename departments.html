@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<!--Kristin Benusa 5/10/22-->
+
+<html lang="en">
+    <head>
+        <title>Starfleet Departments</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Intro to Web Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Me">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            @font-face {
+                font-family: HorizonBT;
+                src: url(fonts/HorizonBT.ttf);
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                background-image: url('img/homebgedit.png'), url('img/homebgrepeater.png');
+                background-repeat: no-repeat, repeat;
+            }
+            header{
+                text-align: center;
+            }
+            .header-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-top: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .header-item{
+                font-family: HorizonBT;
+                font-size: 25px;
+            }
+            a:link{
+                color: white;
+                text-decoration: none;
+            }
+            a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            a:active{
+                color: #b5a566;
+                text-decoration: none;
+            }
+            .item1{
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                font-size: 85px;
+                padding-bottom: 30px;
+                color: #b5a566;
+            }
+            .article-heading{
+                text-align: center;
+                padding-top: 2%;
+            }
+            article{
+                padding-left: 20%;
+                padding-right: 20%;
+                width: auto;
+                text-align: left;
+            }
+            h1{
+                font-weight: 100;
+                font-size: 50px;
+                color: #e5e5e5;
+            }
+            h2{
+                font-weight: 500;
+                font-size: 40px;
+                color: #c8c8c8;
+            }
+            footer{
+                text-align: center;
+            }
+            .footer-container{
+                display: grid;
+                margin: auto;
+                height: auto;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 0px;
+                padding-top: 7%;
+            }
+            .foot1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .foot2{
+                text-align: center;
+                margin-top: 15px;
+            }
+            h3{
+                font-size: 25px;
+                font-family: HorizonBT;
+            }
+            h4{
+                font-size: 35px;
+                font-weight: bold;
+                color: #c8c8c8;
+            }
+            @media screen and (max-width: 960px){
+                .item1{
+                    grid-column: 1 / span 2;
+                    grid-row: 1;
+                    padding-bottom: 30px;
+                }
+                nav{
+                    width: auto;
+                    padding-right: 0%;
+                    padding-top: 1%;
+                }
+                article{
+                    text-align: center;
+                    padding-left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-item item1">
+                    <a href="homepage.html">STARFLEET</a></div>
+                <div class="header-item item2">
+                    <a href="missionstatement.html">Mission Statement</a></div>
+                <div class="header-item item3">
+                    <a href="vessels.html">Starfleet Vessels</a></div>  
+                <div class="header-item item4">
+                    <a href="officers.html">Starfleet Officers</a></div>
+                <div class="header-item item5">
+                    <a href="departments.html">Departments</a></div>
+            </div>
+        </header>
+        <!--EDITABLE INFORMATION GOES HERE-->
+        <section>
+            <div class="article-heading">
+                <div>
+                    <h1>Starfleet Departments</h1>
+                </div>
+            </div>
+            <article>
+                <div class="article-container">
+                    <div class="article-item text1">
+                        <h4>Starfleet Academy</h4>
+                        <p>
+                            As early as the original Star Trek, 
+                            characters refer to attending Starfleet Academy. 
+                            Later series establish it as an officer training 
+                            facility with a four-year educational program. 
+                            The main campus is located near Starfleet Headquarters 
+                            in what is now Fort Baker, California.
+                        </p>
+                        <h4>Starfleet Command</h4>
+                        <p>
+                            Starfleet Command is the headquarters/command center of Starfleet. 
+                            Its headquarters are depicted as being in Fort Baker, across the 
+                            Golden Gate from San Francisco. Overlooking the Command from the 
+                            other side of the Golden Gate is the permanent site of the Council 
+                            of the United Federation of Planets in what is now the Presidio of San Francisco.
+                        </p>
+                        <h4>Starfleet Shipyards</h4>
+                        <p>
+                            Starfleet's ships are built on Mare Island near San Francisco. 
+                            Located on San Francisco's Mare Island, with additional starship assembly 
+                            facilities located in Earth orbit, Starfleet's San Francisco Navy Yards 
+                            is the site where the USS Enterprise NCC-1701 was built in 2245. Captain Robert April, 
+                            the Enterprise's first commanding officer, was present at the San Francisco Navy Yards 
+                            when the vessel's major components were built and prepared for assembly in Starfleet's 
+                            orbital drydock facilities.
+                        </p>
+                        <h4>Starfleet Engineering Corps</h4>
+                        <p>
+                            The Starfleet Engineering Corps (also called the Starfleet Corps of Engineers) is 
+                            in conjunction with projects such as hollowing out the underground laboratory complex inside 
+                            the Regula I asteroid, the design of the Yellowstone-class Runabout, and devising a defense 
+                            against the Breen energy-dampening weapon. As a result of these successes, Starfleet engineers 
+                            have gained a reputation as the undisputed masters of technological adaptation and modification.
+                        </p>
+                        <h4>Starfleet Intelligence</h4>
+                        <p>
+                            Starfleet Intelligence is an intelligence agency of the United Federation of Planets. It is 
+                            entrusted with foreign and domestic espionage, counter-espionage, and state security.
+                        </p>
+                        <h4>Starfleet Judge Advocate General</h4>
+                        <p>
+                            The Starfleet Judge Advocate General (or JAG) is the branch charged with overseeing 
+                            legal matters within Starfleet. A court-martial may be convened in the absence of any JAG 
+                            officers by three presiding command-level officers. The loss of a starship automatically 
+                            leads to a JAG court-martial. The Captain has the authority to conduct a court-martial on the ship, 
+                            given the circumstances of the ship being isolated from the Federation.
+                        </p>
+                        <h4>Starfleet Medical</h4>
+                        <p>
+                            Starfleet Medical is the medical branch of Starfleet.
+                        </p>
+                        <h4>Starfleet Tactical</h4>
+                        <p>
+                            Starfleet Tactical is responsible for planning defensive strategies as well as weapons research and development.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--EDITABLE INFORMATION ENDS HERE-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-item foot1">
+                    <div class="article-image"><img src="img/starfleetlogo.png" alt="Starfleet Logo"
+                        style="max-width: 7%; max-height: 7%;"></div></div>
+                <div class="footer-item foot2"><h3>To Boldly Go Where No Man Has Gone Before</h3></div>
+            </div>
+        </footer>
+    </body>
+</html>
