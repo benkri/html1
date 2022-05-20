@@ -10,189 +10,24 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Me">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            * {
-            box-sizing: border-box;
-            }
-            @font-face {
-                font-family: HorizonBT;
-                src: url(fonts/HorizonBT.ttf);
-            }
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                color: #ffffff;
-                background-image: url('img/homebgedit.png'), url('img/homebgrepeater.png');
-                background-repeat: no-repeat, repeat;
-            }
-            header{
-                text-align: center;
-            }
-            .header-container{
-                display: grid;
-                margin: auto;
-                height: auto;
-                width: 100%;
-                padding-top: 20px;
-                padding-left: 10%;
-                padding-right: 10%;
-            }
-            .header-item{
-                font-family: HorizonBT;
-                font-size: 25px;
-            }
-            a:link{
-                color: white;
-                text-decoration: none;
-            }
-            a:visited{
-                color: white;
-                text-decoration: none;
-            }
-            a:hover{
-                color: #b5a566;
-                text-decoration: none;
-            }
-            a:active{
-                color: #b5a566;
-                text-decoration: none;
-            }
-            .item1{
-                grid-column: 1 / span 4;
-                grid-row: 1;
-                font-size: 85px;
-                padding-bottom: 30px;
-                color: #b5a566;
-            }
-            .article-heading{
-                text-align: center;
-                padding-top: 2%;
-            }
-            article{
-                float: left;
-                padding-left: 7%;
-                padding-right: 10%;
-                padding-top: 2%;
-                width: 50%;
-                text-align: left;
-            }
-            .text1{
-                padding-left: 15%;
-            }
-            .text2{
-                padding-left: 15%;
-                padding-top: 5%;
-            }
-            .text3{
-                padding-left: 15%;
-                padding-top: 5%;
-            }
-            .text4{
-                padding-left: 15%;
-                padding-top: 5%;
-            }
-            .text5{
-                padding-left: 15%;
-                padding-top: 5%;
-            }
-            h1{
-                font-weight: 100;
-                font-size: 50px;
-                color: #e5e5e5;
-            }
-            h2{
-                font-weight: 500;
-                font-size: 30px;
-                color: #c8c8c8;
-            }
-            nav{
-                float: right;
-                width: 50%;
-                padding-right: 7%;
-                padding-top: 2%;
-            }
-            .img1{
-                text-align: center;
-                padding-top: 2%;
-            }
-            .img2{
-                text-align: center;
-                padding-top: 6%;
-            }
-            .img3{
-                text-align: center;
-                padding-top: 10%;
-            }
-            .img4{
-                text-align: center;
-                padding-top: 35%;
-            }
-            .img5{
-                text-align: center;
-                padding-top: 37%;
-            }
-            section::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            footer{
-                text-align: center;
-            }
-            .footer-container{
-                display: grid;
-                margin: auto;
-                height: auto;
-                width: 100%;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-bottom: 0px;
-                padding-top: 7%;
-            }
-            .foot1{
-                grid-column: 1;
-                grid-row: 1;
-            }
-            .foot2{
-                text-align: center;
-                margin-top: 15px;
-            }
-            h3{
-                font-size: 25px;
-                font-family: HorizonBT;
-            }
-            @media screen and (max-width: 960px){
-                .item1{
-                    grid-column: 1 / span 2;
-                    grid-row: 1;
-                    padding-bottom: 30px;
-                }
-                nav{
-                    width: auto;
-                    padding-right: 0%;
-                    padding-top: 1%;
-                }
-                article{
-                    text-align: center;
-                    padding-left: 0%;
-                    width: 100%;
-                }
-            }
-        </style>
+        <link href="css/vessels.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
-            <div class="header-container">
-                <div class="header-item item1">
-                    <a href="homepage.html">STARFLEET</a></div>
-                <div class="header-item item2">
-                    <a href="missionstatement.html">Mission Statement</a></div>
-                <div class="header-item item3">
-                    <a href="vessels.html">Starfleet Vessels</a></div>  
-                <div class="header-item item4">
-                    <a href="officers.html">Starfleet Officers</a></div>
-                <div class="header-item item5">
-                    <a href="departments.html">Departments</a></div>
-            </div>
+            <nav>
+                <div class="header-container">
+                    <div class="header-item item1">
+                        <a href="index.html">STARFLEET</a></div>
+                    <div class="header-item item2">
+                        <a href="missionstatement.html">Mission Statement</a></div>
+                    <div class="header-item item3">
+                        <a href="vessels.html">Starfleet Vessels</a></div>  
+                    <div class="header-item item4">
+                        <a href="officers.html">Starfleet Officers</a></div>
+                    <div class="header-item item5">
+                        <a href="departments.html">Departments</a></div>
+                </div>
+            </nav>
         </header>
         <!--EDITABLE INFORMATION GOES HERE-->
         <section>
@@ -225,6 +60,8 @@
                                 <li>Armaments: 3 phase cannons, fore and aft torpedo launchers, spatial torpedoes</li>
                             </ul>
                     </div>
+                    <div class="article-item img1"><img src="img/enterprise.png" alt="NX Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
                     <div class="article-item text2">
                         <h2>Constitution Class</h2>
                         <p>
@@ -250,6 +87,8 @@
                                 <li>Armaments: Phaser banks, 6 fore photon torpedo launchers, 1 aft torpedo launcher</li>
                             </ul>
                     </div>
+                    <div class="article-item img2"><img src="img/constitutionclass.png" alt="Constitution Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
                     <div class="article-item text3">
                         <h2>Excelsior Class</h2>
                         <p>
@@ -276,6 +115,8 @@
                                 <li>Armaments: Phaser banks, fore/aft torpedo launchers, photon/quantum torpedoes</li>
                             </ul>
                     </div>
+                    <div class="article-item img3"><img src="img/excelsiorclass.png" alt="Excelsior Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
                     <div class="article-item text4">
                         <h2>Ambassador Class</h2>
                         <p>
@@ -306,6 +147,8 @@
                                 <li>Armaments: 10 phaser arrays, 2 torpedo launchers, photon torpedoes</li>
                             </ul>
                     </div>
+                    <div class="article-item img4"><img src="img/ambassadorclass.png" alt="Ambassador Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
                     <div class="article-item text5">
                         <h2>Galaxy Class</h2>
                         <p>
@@ -337,22 +180,10 @@
                                 <li>Armaments: 14 phaser arrays, 2 torpedo launchers, photon torpedoes, antimatter mines</li>
                             </ul>
                     </div>
+                    <div class="article-item img5"><img src="img/galaxyclass.png" alt="Galaxy Class"
+                        style="max-width: 100%; max-height: 100%;"></div>
                 </div>
             </article>
-            <nav>
-                <div class="article-images">
-                    <div class="article-image img1"><img src="img/enterprise.png" alt="NX Class"
-                        style="max-width: 100%; max-height: 100%;"></div>
-                    <div class="article-image img2"><img src="img/constitutionclass.png" alt="Constitution Class"
-                        style="max-width: 100%; max-height: 100%;"></div>
-                    <div class="article-image img3"><img src="img/excelsiorclass.png" alt="Excelsior Class"
-                        style="max-width: 100%; max-height: 100%;"></div>
-                    <div class="article-image img4"><img src="img/ambassadorclass.png" alt="Ambassador Class"
-                        style="max-width: 100%; max-height: 100%;"></div>
-                    <div class="article-image img5"><img src="img/galaxyclass.png" alt="Galaxy Class"
-                        style="max-width: 100%; max-height: 100%;"></div>
-                </div>
-            </nav>
         </section>
         <!--EDITABLE INFORMATION ENDS HERE-->
         <footer>
